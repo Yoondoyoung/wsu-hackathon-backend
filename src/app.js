@@ -30,6 +30,20 @@ app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', message: 'Server is running' });
 });
 
+// Simple test endpoint
+app.get('/api/test', (req, res) => {
+  res.json({ 
+    message: 'Backend is working!',
+    timestamp: new Date().toISOString(),
+    env: {
+      hasOpenAI: !!process.env.OPENAI_API_KEY,
+      hasElevenLabs: !!process.env.ELEVENLABS_API_KEY,
+      hasSupabase: !!process.env.SUPABASE_URL,
+      hasSeedream: !!process.env.SEEDREAM_API_KEY
+    }
+  });
+});
+
 // Root endpoint
 app.get('/', (req, res) => {
   res.json({ message: 'StoryCraft API Server', version: '1.0.0' });
