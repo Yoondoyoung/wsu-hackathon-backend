@@ -1,0 +1,1072 @@
+{
+  "narrator_voices": [
+    {
+      "voice_id": "EkK5I93UQWFDigLMpZcX",
+      "name": "James - Husky & Engaging",
+      "description": "A slightly husky and bassy voice with a standard American accent. Modulated, controlled, and direct and perfect for audiobooks, captivating narrations, or storytelling, or other professional voiceover work.",
+      "labels": {
+        "accent": "american",
+        "descriptive": "deep",
+        "age": "middle_aged",
+        "gender": "male",
+        "language": "en",
+        "use_case": "narrative_story"
+      },
+      "category": "professional"
+    },
+    {
+      "voice_id": "1hlpeD1ydbI2ow0Tt3EW",
+      "name": "Oracle X",
+      "description": "An experienced British female voice narrator with a smooth, warm, engaging tone. Easy listening and useful for both fiction and non-fiction audiobooks as well as e-reader usage.",
+      "labels": {
+        "accent": "british",
+        "descriptive": "calm",
+        "age": "middle_aged",
+        "gender": "female",
+        "language": "en",
+        "use_case": "narrative_story"
+      },
+      "category": "professional"
+    },
+    {
+      "voice_id": "iCrDUkL56s3C8sCRl7wb",
+      "name": "Hope - soothing narrator",
+      "description": "A warm, soothing, and captivating voice, ideal for audiobook narrations, meditation scripts, and guided experiences—bringing stories to life with clarity and calm.",
+      "labels": {
+        "accent": "american",
+        "descriptive": "calm",
+        "age": "young",
+        "gender": "female",
+        "language": "en",
+        "use_case": "narrative_story"
+      },
+      "category": "professional"
+    },
+    {
+      "voice_id": "ZF6FPAbjXT4488VcRRnw",
+      "name": "Amelia",
+      "description": "A young British English woman's voice, clear and easy to understand. Expressive and enthusiastic, it's beautiful for narration, podcasts and social media such as YouTube, Tiktok, Reels and Stories. This studio-produced audio is great for a young woman's Gen-Z voice in audiobooks, high-quality video dubbing, advertising and reading.",
+      "labels": {
+        "accent": "british",
+        "descriptive": "upbeat",
+        "age": "young",
+        "gender": "female",
+        "language": "en",
+        "use_case": "narrative_story"
+      },
+      "category": "professional"
+    },
+    {
+      "voice_id": "Crm8VULvkVs5ZBDa1Ixm",
+      "name": "Andrea Wolff - clear, youthful, evenly paced ",
+      "description": "A crisp young American woman's voice. Perfect for reading literature or as a young character. ",
+      "labels": {
+        "accent": "american",
+        "descriptive": "pleasant",
+        "age": "young",
+        "gender": "female",
+        "language": "en",
+        "use_case": "narrative_story"
+      },
+      "category": "professional"
+    },
+    {
+      "voice_id": "iUqOXhMfiOIbBejNtfLR",
+      "name": "W. Storytime Oxley",
+      "description": "Storytime!  This American grandpa uses his rich baritone to bring your script alive, whether it's a bedtime story he reads to mom and the kids or a fanciful presentation that he brings to your audience!  A voice that reflects patience, honesty and love.",
+      "labels": {
+        "accent": "american",
+        "descriptive": "calm",
+        "age": "middle_aged",
+        "gender": "male",
+        "language": "en",
+        "use_case": "narrative_story"
+      },
+      "category": "professional"
+    },
+    {
+      "voice_id": "EXAVITQu4vr4xnSDxMaL",
+      "name": "Sarah",
+      "description": "Young adult woman with a confident and warm, mature quality and a reassuring, professional tone.",
+      "labels": {
+        "accent": "american",
+        "descriptive": "professional",
+        "age": "young",
+        "gender": "female",
+        "language": "en",
+        "use_case": "entertainment_tv"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "JBFqnCBsd6RMkjVDRZzb",
+      "name": "George",
+      "description": "Warm resonance that instantly captivates listeners.",
+      "labels": {
+        "accent": "british",
+        "descriptive": "mature",
+        "age": "middle_aged",
+        "gender": "male",
+        "language": "en",
+        "use_case": "narrative_story"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "TX3LPaxmHKxFdv7VOQHJ",
+      "name": "Liam",
+      "description": "A young adult with energy and warmth - suitable for reels and shorts.",
+      "labels": {
+        "accent": "american",
+        "descriptive": "confident",
+        "age": "young",
+        "gender": "male",
+        "language": "en",
+        "use_case": "social_media"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
+      "name": "Alice",
+      "description": "Clear and engaging, friendly woman with a British accent suitable for e-learning.",
+      "labels": {
+        "accent": "british",
+        "descriptive": "professional",
+        "age": "middle_aged",
+        "gender": "female",
+        "language": "en",
+        "use_case": "advertisement"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "XrExE9yKIg1WjnnlVkGX",
+      "name": "Matilda",
+      "description": "A professional woman with a pleasing alto pitch. Suitable for many use cases.",
+      "labels": {
+        "accent": "american",
+        "descriptive": "upbeat",
+        "age": "middle_aged",
+        "gender": "female",
+        "language": "en",
+        "use_case": "informative_educational"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "onwK4e9ZLuTAKqWW03F9",
+      "name": "Daniel",
+      "description": "A strong voice perfect for delivering a professional broadcast or news story.",
+      "labels": {
+        "accent": "british",
+        "descriptive": "formal",
+        "age": "middle_aged",
+        "gender": "male",
+        "language": "en",
+        "use_case": "informative_educational"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "pFZP5JQG7iQjIQuC4Bku",
+      "name": "Lily",
+      "description": "Velvety British female voice delivers news and narrations with warmth and clarity.",
+      "labels": {
+        "accent": "british",
+        "description": "warm",
+        "descriptive": "confident",
+        "gender": "female",
+        "age": "middle_aged",
+        "use_case": "narration"
+      },
+      "category": "premade"
+    }
+  ],
+  "character_voices": [
+    {
+      "voice_id": "ZF6FPAbjXT4488VcRRnw",
+      "name": "Amelia",
+      "description": "A young British English woman's voice, clear and easy to understand. Expressive and enthusiastic, it's beautiful for narration, podcasts and social media such as YouTube, Tiktok, Reels and Stories. This studio-produced audio is great for a young woman's Gen-Z voice in audiobooks, high-quality video dubbing, advertising and reading.",
+      "labels": {
+        "accent": "british",
+        "descriptive": "upbeat",
+        "age": "young",
+        "gender": "female",
+        "language": "en",
+        "use_case": "narrative_story"
+      },
+      "category": "professional"
+    },
+    {
+      "voice_id": "Crm8VULvkVs5ZBDa1Ixm",
+      "name": "Andrea Wolff - clear, youthful, evenly paced ",
+      "description": "A crisp young American woman's voice. Perfect for reading literature or as a young character. ",
+      "labels": {
+        "accent": "american",
+        "descriptive": "pleasant",
+        "age": "young",
+        "gender": "female",
+        "language": "en",
+        "use_case": "narrative_story"
+      },
+      "category": "professional"
+    },
+    {
+      "voice_id": "2EiwWnXFnvU5JabPnv8n",
+      "name": "Clyde",
+      "description": "Great for character use-cases",
+      "labels": {
+        "accent": "american",
+        "descriptive": "intense",
+        "age": "middle_aged",
+        "gender": "male",
+        "language": "en",
+        "use_case": "characters_animation"
+      },
+      "category": "premade"
+    }
+  ],
+  "all_voices": [
+    {
+      "voice_id": "ESELSAYNsoxwNZeqEklA",
+      "name": "Rebekah Nemethy - Pro Narration",
+      "description": "A rich female voice trained on young adult fantasy audiobooks. Accent is a slight New York American accent.",
+      "labels": {
+        "accent": "american",
+        "descriptive": "confident",
+        "age": "young",
+        "gender": "female",
+        "language": "en",
+        "use_case": "narrative_story"
+      },
+      "category": "professional"
+    },
+    {
+      "voice_id": "Mu5jxyqZOLIGltFpfalg",
+      "name": "Jameson - Guided Meditation & Narration",
+      "description": "A middle aged American male. Calm and relaxing voice created for guided meditations and relaxed narration.",
+      "labels": {
+        "accent": "american",
+        "descriptive": "meditative",
+        "age": "middle_aged",
+        "gender": "male",
+        "language": "en",
+        "use_case": "narrative_story"
+      },
+      "category": "professional"
+    },
+    {
+      "voice_id": "EiNlNiXeDU1pqqOPrYMO",
+      "name": "John Doe - Deep",
+      "description": "Middle aged American male with a very deep voice. Perfect for audiobooks.",
+      "labels": {
+        "accent": "american",
+        "descriptive": "deep",
+        "age": "middle_aged",
+        "gender": "male",
+        "language": "en",
+        "use_case": "narrative_story"
+      },
+      "category": "professional"
+    },
+    {
+      "voice_id": "EkK5I93UQWFDigLMpZcX",
+      "name": "James - Husky & Engaging",
+      "description": "A slightly husky and bassy voice with a standard American accent. Modulated, controlled, and direct and perfect for audiobooks, captivating narrations, or storytelling, or other professional voiceover work.",
+      "labels": {
+        "accent": "american",
+        "descriptive": "deep",
+        "age": "middle_aged",
+        "gender": "male",
+        "language": "en",
+        "use_case": "narrative_story"
+      },
+      "category": "professional"
+    },
+    {
+      "voice_id": "1hlpeD1ydbI2ow0Tt3EW",
+      "name": "Oracle X",
+      "description": "An experienced British female voice narrator with a smooth, warm, engaging tone. Easy listening and useful for both fiction and non-fiction audiobooks as well as e-reader usage.",
+      "labels": {
+        "accent": "british",
+        "descriptive": "calm",
+        "age": "middle_aged",
+        "gender": "female",
+        "language": "en",
+        "use_case": "narrative_story"
+      },
+      "category": "professional"
+    },
+    {
+      "voice_id": "iCrDUkL56s3C8sCRl7wb",
+      "name": "Hope - soothing narrator",
+      "description": "A warm, soothing, and captivating voice, ideal for audiobook narrations, meditation scripts, and guided experiences—bringing stories to life with clarity and calm.",
+      "labels": {
+        "accent": "american",
+        "descriptive": "calm",
+        "age": "young",
+        "gender": "female",
+        "language": "en",
+        "use_case": "narrative_story"
+      },
+      "category": "professional"
+    },
+    {
+      "voice_id": "8JVbfL6oEdmuxKn5DK2C",
+      "name": "Johnny Kid  - Serious",
+      "description": "Young British male with a serious and calm voice. Perfect for audiobooks.",
+      "labels": {
+        "accent": "british",
+        "descriptive": "calm",
+        "age": "young",
+        "gender": "male",
+        "language": "en",
+        "use_case": "narrative_story"
+      },
+      "category": "professional"
+    },
+    {
+      "voice_id": "ZF6FPAbjXT4488VcRRnw",
+      "name": "Amelia",
+      "description": "A young British English woman's voice, clear and easy to understand. Expressive and enthusiastic, it's beautiful for narration, podcasts and social media such as YouTube, Tiktok, Reels and Stories. This studio-produced audio is great for a young woman's Gen-Z voice in audiobooks, high-quality video dubbing, advertising and reading.",
+      "labels": {
+        "accent": "british",
+        "descriptive": "upbeat",
+        "age": "young",
+        "gender": "female",
+        "language": "en",
+        "use_case": "narrative_story"
+      },
+      "category": "professional"
+    },
+    {
+      "voice_id": "Crm8VULvkVs5ZBDa1Ixm",
+      "name": "Andrea Wolff - clear, youthful, evenly paced ",
+      "description": "A crisp young American woman's voice. Perfect for reading literature or as a young character. ",
+      "labels": {
+        "accent": "american",
+        "descriptive": "pleasant",
+        "age": "young",
+        "gender": "female",
+        "language": "en",
+        "use_case": "narrative_story"
+      },
+      "category": "professional"
+    },
+    {
+      "voice_id": "iUqOXhMfiOIbBejNtfLR",
+      "name": "W. Storytime Oxley",
+      "description": "Storytime!  This American grandpa uses his rich baritone to bring your script alive, whether it's a bedtime story he reads to mom and the kids or a fanciful presentation that he brings to your audience!  A voice that reflects patience, honesty and love.",
+      "labels": {
+        "accent": "american",
+        "descriptive": "calm",
+        "age": "middle_aged",
+        "gender": "male",
+        "language": "en",
+        "use_case": "narrative_story"
+      },
+      "category": "professional"
+    },
+    {
+      "voice_id": "21m00Tcm4TlvDq8ikWAM",
+      "name": "Rachel",
+      "description": "Matter-of-fact, personable woman. Great for conversational use cases.",
+      "labels": {
+        "accent": "american",
+        "descriptive": "casual",
+        "age": "young",
+        "gender": "female",
+        "language": "en",
+        "use_case": "conversational"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "29vD33N1CtxCmqQRPOHJ",
+      "name": "Drew",
+      "description": "No description",
+      "labels": {
+        "accent": "american",
+        "description": "well-rounded",
+        "age": "middle_aged",
+        "gender": "male",
+        "use_case": "news"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "2EiwWnXFnvU5JabPnv8n",
+      "name": "Clyde",
+      "description": "Great for character use-cases",
+      "labels": {
+        "accent": "american",
+        "descriptive": "intense",
+        "age": "middle_aged",
+        "gender": "male",
+        "language": "en",
+        "use_case": "characters_animation"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "5Q0t7uMcjvnagumLfvZi",
+      "name": "Paul",
+      "description": "No description",
+      "labels": {
+        "accent": "american",
+        "description": "authoritative",
+        "age": "middle_aged",
+        "gender": "male",
+        "use_case": "news"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "9BWtsMINqrJLrRacOk9x",
+      "name": "Aria",
+      "description": "A middle-aged female with an African-American accent. Calm with a hint of rasp.",
+      "labels": {
+        "accent": "american",
+        "descriptive": "husky",
+        "age": "middle_aged",
+        "gender": "female",
+        "language": "en",
+        "use_case": "informative_educational"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "AZnzlk1XvdvUeBnXmlld",
+      "name": "Domi",
+      "description": "No description",
+      "labels": {
+        "accent": "american",
+        "description": "strong",
+        "age": "young",
+        "gender": "female",
+        "use_case": "narration"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "CYw3kZ02Hs0563khs1Fj",
+      "name": "Dave",
+      "description": "No description",
+      "labels": {
+        "accent": "british",
+        "description": "conversational",
+        "age": "young",
+        "gender": "male",
+        "use_case": "characters"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "CwhRBWXzGAHq8TQ4Fs17",
+      "name": "Roger",
+      "description": "Easy going and perfect for casual conversations.",
+      "labels": {
+        "accent": "american",
+        "descriptive": "classy",
+        "age": "middle_aged",
+        "gender": "male",
+        "language": "en",
+        "use_case": "conversational"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "D38z5RcWu1voky8WS1ja",
+      "name": "Fin",
+      "description": "No description",
+      "labels": {
+        "accent": "irish",
+        "description": "sailor",
+        "age": "old",
+        "gender": "male",
+        "use_case": "characters"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "EXAVITQu4vr4xnSDxMaL",
+      "name": "Sarah",
+      "description": "Young adult woman with a confident and warm, mature quality and a reassuring, professional tone.",
+      "labels": {
+        "accent": "american",
+        "descriptive": "professional",
+        "age": "young",
+        "gender": "female",
+        "language": "en",
+        "use_case": "entertainment_tv"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "ErXwobaYiN019PkySvjV",
+      "name": "Antoni",
+      "description": "No description",
+      "labels": {
+        "accent": "american",
+        "description": "well-rounded",
+        "age": "young",
+        "gender": "male",
+        "use_case": "narration"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "FGY2WhTYpPnrIDTdsKH5",
+      "name": "Laura",
+      "description": "This young adult female voice delivers sunny enthusiasm with a quirky attitude.",
+      "labels": {
+        "accent": "american",
+        "descriptive": "sassy",
+        "age": "young",
+        "gender": "female",
+        "language": "en",
+        "use_case": "social_media"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "GBv7mTt0atIp3Br8iCZE",
+      "name": "Thomas",
+      "description": "Soft and subdued male voice, optimal for narrations or meditations",
+      "labels": {
+        "accent": "american",
+        "descriptive": "meditative",
+        "age": "young",
+        "gender": "male",
+        "language": "en",
+        "use_case": "narrative_story"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "IKne3meq5aSn9XLyUdCD",
+      "name": "Charlie",
+      "description": "A young Australian male with a confident and energetic voice.",
+      "labels": {
+        "accent": "australian",
+        "descriptive": "hyped",
+        "age": "young",
+        "gender": "male",
+        "language": "en",
+        "use_case": "conversational"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "JBFqnCBsd6RMkjVDRZzb",
+      "name": "George",
+      "description": "Warm resonance that instantly captivates listeners.",
+      "labels": {
+        "accent": "british",
+        "descriptive": "mature",
+        "age": "middle_aged",
+        "gender": "male",
+        "language": "en",
+        "use_case": "narrative_story"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "LcfcDJNUP1GQjkzn1xUU",
+      "name": "Emily",
+      "description": "No description",
+      "labels": {
+        "accent": "american",
+        "description": "calm",
+        "age": "young",
+        "gender": "female",
+        "use_case": "meditation"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "MF3mGyEYCl7XYWbV9V6O",
+      "name": "Elli",
+      "description": "No description",
+      "labels": {
+        "accent": "american",
+        "description": "emotional",
+        "age": "young",
+        "gender": "female",
+        "use_case": "narration"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "N2lVS1w4EtoT3dr4eOWO",
+      "name": "Callum",
+      "description": "Deceptively gravelly, yet unsettling edge.",
+      "labels": {
+        "accent": "",
+        "age": "middle_aged",
+        "language": "en",
+        "gender": "male",
+        "use_case": "characters"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "ODq5zmih8GrVes37Dizd",
+      "name": "Patrick",
+      "description": "No description",
+      "labels": {
+        "accent": "american",
+        "description": "shouty",
+        "age": "middle_aged",
+        "gender": "male",
+        "use_case": "characters"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "SAz9YHcvj6GT2YYXdXww",
+      "name": "River",
+      "description": "A relaxed, neutral voice ready for narrations or conversational projects.",
+      "labels": {
+        "accent": "american",
+        "descriptive": "calm",
+        "age": "middle_aged",
+        "gender": "neutral",
+        "language": "en",
+        "use_case": "conversational"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "SOYHLrjzK2X1ezoPC6cr",
+      "name": "Harry",
+      "description": "An animated warrior ready to charge forward.",
+      "labels": {
+        "accent": "american",
+        "descriptive": "rough",
+        "age": "young",
+        "gender": "male",
+        "language": "en",
+        "use_case": "characters_animation"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "TX3LPaxmHKxFdv7VOQHJ",
+      "name": "Liam",
+      "description": "A young adult with energy and warmth - suitable for reels and shorts.",
+      "labels": {
+        "accent": "american",
+        "descriptive": "confident",
+        "age": "young",
+        "gender": "male",
+        "language": "en",
+        "use_case": "social_media"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "ThT5KcBeYPX3keUQqHPh",
+      "name": "Dorothy",
+      "description": "No description",
+      "labels": {
+        "accent": "british",
+        "description": "pleasant",
+        "age": "young",
+        "gender": "female",
+        "use_case": "narration"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "TxGEqnHWrfWFTfGW9XjX",
+      "name": "Josh",
+      "description": "No description",
+      "labels": {
+        "accent": "american",
+        "description": "deep",
+        "age": "young",
+        "gender": "male",
+        "use_case": "narration"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "VR6AewLTigWG4xSOukaG",
+      "name": "Arnold",
+      "description": "No description",
+      "labels": {
+        "accent": "american",
+        "description": "crisp",
+        "age": "middle_aged",
+        "gender": "male",
+        "use_case": "narration"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "XB0fDUnXU5powFXDhCwa",
+      "name": "Charlotte",
+      "description": "Sensual and raspy, she's ready to voice your temptress in video games.",
+      "labels": {
+        "accent": "swedish",
+        "descriptive": "relaxed",
+        "age": "young",
+        "gender": "female",
+        "language": "en",
+        "use_case": "characters_animation"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
+      "name": "Alice",
+      "description": "Clear and engaging, friendly woman with a British accent suitable for e-learning.",
+      "labels": {
+        "accent": "british",
+        "descriptive": "professional",
+        "age": "middle_aged",
+        "gender": "female",
+        "language": "en",
+        "use_case": "advertisement"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "XrExE9yKIg1WjnnlVkGX",
+      "name": "Matilda",
+      "description": "A professional woman with a pleasing alto pitch. Suitable for many use cases.",
+      "labels": {
+        "accent": "american",
+        "descriptive": "upbeat",
+        "age": "middle_aged",
+        "gender": "female",
+        "language": "en",
+        "use_case": "informative_educational"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "ZQe5CZNOzWyzPSCn5a3c",
+      "name": "James",
+      "description": "No description",
+      "labels": {
+        "accent": "australian",
+        "description": "calm",
+        "age": "old",
+        "gender": "male",
+        "use_case": "news"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "Zlb1dXrM653N07WRdFW3",
+      "name": "Joseph",
+      "description": "No description",
+      "labels": {
+        "accent": "british",
+        "description": "articulate",
+        "age": "middle_aged",
+        "gender": "male",
+        "use_case": "news"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "bIHbv24MWmeRgasZH58o",
+      "name": "Will",
+      "description": "Conversational and laid back.",
+      "labels": {
+        "accent": "american",
+        "descriptive": "chill",
+        "age": "young",
+        "gender": "male",
+        "language": "en",
+        "use_case": "conversational"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "bVMeCyTHy58xNoL34h3p",
+      "name": "Jeremy",
+      "description": "No description",
+      "labels": {
+        "accent": "irish",
+        "description": "excited",
+        "age": "young",
+        "gender": "male",
+        "use_case": "narration"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "cgSgspJ2msm6clMCkdW9",
+      "name": "Jessica",
+      "description": "Young and popular, this playful American female voice is perfect for trendy content.",
+      "labels": {
+        "accent": "american",
+        "descriptive": "cute",
+        "age": "young",
+        "gender": "female",
+        "language": "en",
+        "use_case": "conversational"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "cjVigY5qzO86Huf0OWal",
+      "name": "Eric",
+      "description": "A smooth tenor pitch from a man in his 40s - perfect for agentic use cases.",
+      "labels": {
+        "accent": "american",
+        "descriptive": "classy",
+        "age": "middle_aged",
+        "gender": "male",
+        "language": "en",
+        "use_case": "conversational"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "flq6f7yk4E4fJM5XTYuZ",
+      "name": "Michael",
+      "description": "No description",
+      "labels": {
+        "accent": "american",
+        "description": "calm",
+        "age": "old",
+        "gender": "male",
+        "use_case": "narration"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "g5CIjZEefAph4nQFvHAz",
+      "name": "Ethan",
+      "description": "No description",
+      "labels": {
+        "accent": "american",
+        "description": "soft",
+        "age": "young",
+        "gender": "male",
+        "use_case": "ASMR"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "iP95p4xoKVk53GoZ742B",
+      "name": "Chris",
+      "description": "Natural and real, this down-to-earth voice is great across many use-cases.",
+      "labels": {
+        "accent": "american",
+        "descriptive": "casual",
+        "age": "middle_aged",
+        "gender": "male",
+        "language": "en",
+        "use_case": "conversational"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "jBpfuIE2acCO8z3wKNLl",
+      "name": "Gigi",
+      "description": "No description",
+      "labels": {
+        "accent": "american",
+        "description": "childlish",
+        "age": "young",
+        "gender": "female",
+        "use_case": "animation"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "jsCqWAovK2LkecY7zXl4",
+      "name": "Freya",
+      "description": "No description",
+      "labels": {
+        "accent": "american",
+        "description": "expressive",
+        "age": "young",
+        "gender": "female",
+        "use_case": "characters"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "nPczCjzI2devNBz1zQrb",
+      "name": "Brian",
+      "description": "Middle-aged man with a resonant and comforting tone. Great for narrations and advertisements.",
+      "labels": {
+        "accent": "american",
+        "descriptive": "classy",
+        "age": "middle_aged",
+        "gender": "male",
+        "language": "en",
+        "use_case": "social_media"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "oWAxZDx7w5VEj9dCyTzz",
+      "name": "Grace",
+      "description": "No description",
+      "labels": {
+        "accent": "us-southern",
+        "description": "pleasant",
+        "age": "young",
+        "gender": "female",
+        "use_case": "narration"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "onwK4e9ZLuTAKqWW03F9",
+      "name": "Daniel",
+      "description": "A strong voice perfect for delivering a professional broadcast or news story.",
+      "labels": {
+        "accent": "british",
+        "descriptive": "formal",
+        "age": "middle_aged",
+        "gender": "male",
+        "language": "en",
+        "use_case": "informative_educational"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "pFZP5JQG7iQjIQuC4Bku",
+      "name": "Lily",
+      "description": "Velvety British female voice delivers news and narrations with warmth and clarity.",
+      "labels": {
+        "accent": "british",
+        "description": "warm",
+        "descriptive": "confident",
+        "gender": "female",
+        "age": "middle_aged",
+        "use_case": "narration"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "pMsXgVXv3BLzUgSXRplE",
+      "name": "Serena",
+      "description": "No description",
+      "labels": {
+        "accent": "american",
+        "description": "pleasant",
+        "age": "middle_aged",
+        "gender": "female",
+        "use_case": "narration"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "name": "Adam",
+      "description": "No description",
+      "labels": {
+        "accent": "",
+        "description": "deep",
+        "age": "middle_aged",
+        "gender": "male",
+        "language": "en",
+        "use_case": "narration"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "piTKgcLEGmPE4e6mEKli",
+      "name": "Nicole",
+      "description": "No description",
+      "labels": {
+        "accent": "american",
+        "description": "soft",
+        "age": "young",
+        "gender": "female",
+        "use_case": "ASMR"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "pqHfZKP75CvOlQylNhV4",
+      "name": "Bill",
+      "description": "Friendly and comforting voice ready to narrate your stories.",
+      "labels": {
+        "accent": "american",
+        "descriptive": "crisp",
+        "age": "old",
+        "gender": "male",
+        "language": "en",
+        "use_case": "advertisement"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "t0jbNlBVZ17f02VDIeMI",
+      "name": "Jessie",
+      "description": "No description",
+      "labels": {
+        "accent": "american",
+        "description": "raspy",
+        "age": "old",
+        "gender": "male",
+        "use_case": "characters"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "yoZ06aMxZJJ28mfd3POQ",
+      "name": "Sam",
+      "description": "No description",
+      "labels": {
+        "accent": "american",
+        "description": "raspy",
+        "age": "young",
+        "gender": "male",
+        "use_case": "narration"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "z9fAnlkpzviPz146aGWa",
+      "name": "Glinda",
+      "description": "No description",
+      "labels": {
+        "accent": "american",
+        "description": "witch",
+        "age": "middle_aged",
+        "gender": "female",
+        "use_case": "characters"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "zcAOhNBS3c14rBihAFp1",
+      "name": "Giovanni",
+      "description": "No description",
+      "labels": {
+        "accent": "italian",
+        "description": "foreigner",
+        "age": "young",
+        "gender": "male",
+        "use_case": "narration"
+      },
+      "category": "premade"
+    },
+    {
+      "voice_id": "zrHiDhphv9ZnVXBqCLjz",
+      "name": "Mimi",
+      "description": "No description",
+      "labels": {
+        "accent": "swedish",
+        "description": "childish",
+        "age": "young",
+        "gender": "female",
+        "use_case": "animation"
+      },
+      "category": "premade"
+    }
+  ]
+}
