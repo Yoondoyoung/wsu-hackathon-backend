@@ -56,16 +56,31 @@ const synthesizeLine = async ({ text, voiceId, voiceSettings }) => {
 };
 
 const generateSound = async ({ description }) => {
-  if (!description) return null;
+  if (!description) {
+    console.warn('[pipeline] SFX generation skipped: no description provided');
+    return null;
+  }
+  
+  console.log(`[pipeline] Starting SFX generation for: "${description}"`);
   
   try {
     const response = await generateSoundEffect({ description, placeholder: description.slice(0, 20) });
+    const buffer = Buffer.from(response.audioBase64, 'base64');
+    console.log(`[pipeline] SFX generation successful for "${description}", buffer size: ${buffer.length} bytes`);
+    
     return {
-      buffer: Buffer.from(response.audioBase64, 'base64'),
+      buffer,
       base64: response.audioBase64,
     };
   } catch (error) {
-    console.warn(`[pipeline] SFX generation failed for "${description}":`, error.message);
+    console.error(`[pipeline] SFX generation failed for "${description}":`, error.message);
+    console.error(`[pipeline] SFX error details:`, {
+      message: error.message,
+      status: error.status,
+      code: error.code,
+      description,
+      stack: error.stack
+    });
     return null; // SFX 실패 시 null 반환하여 오디오 파이프라인 계속 진행
   }
 };
@@ -108,6 +123,7 @@ export const processScene = async ({ storyId, page, timeline, imagePrompt, narra
   setPageStatus(storyId, page, 'processing');
   appendPageLog(storyId, page, `Setting the stage for scene ${page}...`);
   console.log(`[pipeline] Scene ${page}: starting processing.`);
+  console.log(`[pipeline] Scene ${page}: Environment check - ENABLE_AUDIO: ${ENABLE_AUDIO}, ENABLE_ELEVEN_ENDPOINTS: ${ENABLE_ELEVEN_ENDPOINTS}`);
 
   let hasError = false;
   let illustration = null;
@@ -115,8 +131,12 @@ export const processScene = async ({ storyId, page, timeline, imagePrompt, narra
   let finalAudio = null;
 
   if (ENABLE_AUDIO && ENABLE_ELEVEN_ENDPOINTS) {
+    console.log(`[pipeline] Scene ${page}: Processing timeline with ${timeline?.length || 0} beats`);
+    console.log(`[pipeline] Scene ${page}: Timeline beats:`, timeline?.map(b => ({ type: b.type, text: b.text?.slice(0, 50), description: b.description?.slice(0, 50) })));
+    
     for (const beat of timeline || []) {
       const type = (beat.type || '').toLowerCase();
+      console.log(`[pipeline] Scene ${page}: Processing beat type: "${type}"`);
       try {
         if (type === 'narration') {
           appendPageLog(storyId, page, 'Narrator steps into the spotlight.');
@@ -142,22 +162,27 @@ export const processScene = async ({ storyId, page, timeline, imagePrompt, narra
           const description = beat.description || beat.text;
           if (!description) {
             appendPageLog(storyId, page, 'Empty sound effect skipped.');
+            console.warn(`[pipeline] Scene ${page}: SFX skipped - no description provided`);
             continue;
           }
           appendPageLog(storyId, page, `Generating sound effect: ${description}.`);
+          console.log(`[pipeline] Scene ${page}: Processing SFX beat: "${description}"`);
           try {
             const fx = await generateSound({ description });
             if (fx) {
+              console.log(`[pipeline] Scene ${page}: SFX generated successfully, applying fade effects`);
               // SFX에 fade 효과 적용
               const fadedFx = await applySFXFadeEffects(fx.buffer, description);
               audioBuffers.push(fadedFx);
               appendPageLog(storyId, page, 'Sound effect ready with fade effects.');
+              console.log(`[pipeline] Scene ${page}: SFX added to audio buffers (${audioBuffers.length} total buffers)`);
             } else {
               appendPageLog(storyId, page, 'Sound effect generation returned null - skipping.');
+              console.warn(`[pipeline] Scene ${page}: SFX generation returned null for "${description}"`);
             }
           } catch (sfxError) {
             appendPageLog(storyId, page, `Sound effect generation failed: ${sfxError.message} - continuing without SFX.`);
-            console.warn(`[pipeline] Scene ${page}: SFX generation failed, continuing without SFX:`, sfxError.message);
+            console.error(`[pipeline] Scene ${page}: SFX generation failed for "${description}":`, sfxError);
             // SFX 실패해도 계속 진행
           }
         }

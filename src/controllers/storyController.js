@@ -672,14 +672,71 @@ export const generateStoryBundle = asyncHandler(async (req, res) => {
 export const listNarratorVoices = asyncHandler(async (req, res) => {
   console.log('[narrator-voices] listing available narrator voices');
   
-  // Simple narrator voices list
+  // Enhanced narrator voices list with descriptions
   const narratorVoices = [
-    { id: 'EkK5I93UQWFDigLMpZcX', name: 'James - Husky & Engaging', gender: 'male' },
-    { id: 'ESELSAYNsoxwNZeqEklA', name: 'Rebekah Nemethy - Pro Narration', gender: 'female' },
-    { id: 'Mu5jxyqZOLIGltFpfalg', name: 'Jameson - Guided Meditation', gender: 'male' },
-    { id: 'iCrDUkL56s3C8sCRl7wb', name: 'Hope - Soothing Narrator', gender: 'female' },
-    { id: 'iUqOXhMfiOIbBejNtfLR', name: 'W. Storytime Oxley', gender: 'male' }
+    { 
+      id: 'EkK5I93UQWFDigLMpZcX', 
+      name: 'James - Husky & Engaging', 
+      gender: 'male',
+      description: 'Deep, engaging male voice perfect for adventure stories'
+    },
+    { 
+      id: 'ESELSAYNsoxwNZeqEklA', 
+      name: 'Rebekah Nemethy - Pro Narration', 
+      gender: 'female',
+      description: 'Professional female narrator with clear, warm delivery'
+    },
+    { 
+      id: 'Mu5jxyqZOLIGltFpfalg', 
+      name: 'Jameson - Guided Meditation', 
+      gender: 'male',
+      description: 'Calm, soothing male voice ideal for peaceful stories'
+    },
+    { 
+      id: 'iCrDUkL56s3C8sCRl7wb', 
+      name: 'Hope - Soothing Narrator', 
+      gender: 'female',
+      description: 'Gentle, comforting female voice for emotional stories'
+    },
+    { 
+      id: 'iUqOXhMfiOIbBejNtfLR', 
+      name: 'W. Storytime Oxley', 
+      gender: 'male',
+      description: 'Classic storyteller voice with traditional charm'
+    },
+    { 
+      id: 'TX3LPaxmHKxFdv7VOQHJ', 
+      name: 'Liam - Young Hero', 
+      gender: 'male',
+      description: 'Energetic young male voice for action-packed adventures'
+    },
+    { 
+      id: 'ZF6FPAbjXT4488VcRRnw', 
+      name: 'Amelia - Brave Heroine', 
+      gender: 'female',
+      description: 'Confident young female voice for heroic tales'
+    },
+    { 
+      id: 'EXAVITQu4vr4xnSDxMaL', 
+      name: 'Sarah - Wise Mentor', 
+      gender: 'female',
+      description: 'Mature, wise female voice for guidance and wisdom'
+    },
+    { 
+      id: '5Q0t7uMcjvnagumLfvZi', 
+      name: 'Paul - Trusted Guide', 
+      gender: 'male',
+      description: 'Reliable, trustworthy male voice for epic journeys'
+    },
+    { 
+      id: '2EiwWnXFnvU5JabPnv8n', 
+      name: 'Clyde - Mysterious Villain', 
+      gender: 'male',
+      description: 'Deep, mysterious voice perfect for antagonists'
+    }
   ];
+  
+  console.log(`[narrator-voices] Returning ${narratorVoices.length} narrator voices`);
   
   res.status(200).json({
     voices: narratorVoices,

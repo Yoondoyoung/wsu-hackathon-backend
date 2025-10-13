@@ -504,6 +504,7 @@ const parseStoryFromContent = (content) => {
             voiceSettings: entry.voice_settings,
           };
         } else if (entry.type === 'sfx') {
+          console.log(`[gptService] Processing SFX entry: "${entry.description || entry.placeholder || entry.text}"`);
           return {
             ...baseEntry,
             description: entry.description,
@@ -591,13 +592,17 @@ const parseStoryFromContent = (content) => {
 
     // Add SFX
     if (Array.isArray(scene.sfx)) {
-      scene.sfx.forEach((sfx) => {
+      console.log(`[gptService] Adding ${scene.sfx.length} SFX entries to timeline for scene ${sceneNumber}`);
+      scene.sfx.forEach((sfx, index) => {
+        console.log(`[gptService] SFX ${index + 1}: "${sfx}"`);
         timeline.push({
           type: "sfx",
           description: sfx,
           text: sfx,
         });
       });
+    } else {
+      console.log(`[gptService] No SFX found for scene ${sceneNumber}`);
     }
 
     return {

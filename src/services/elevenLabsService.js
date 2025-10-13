@@ -16,8 +16,10 @@ const ELEVEN_LIST_VOICES_URL = 'https://api.elevenlabs.io/v1/voices';
 
 const requireApiKey = () => {
   if (!process.env.ELEVENLABS_API_KEY) {
+    console.error('[elevenlabs] ELEVENLABS_API_KEY is not configured');
     throw new HttpError(500, 'ELEVENLABS_API_KEY is not configured.');
   }
+  console.log(`[elevenlabs] API key is configured (length: ${process.env.ELEVENLABS_API_KEY.length})`);
 };
 
 // Request queue management
@@ -146,6 +148,8 @@ export const generateSoundEffect = async ({ description, placeholder }) => {
     throw new HttpError(400, 'Sound effect description is required.');
   }
 
+  console.log(`[elevenlabs][sfx] Starting SFX generation for: "${description}"`);
+
   // SFX 타입에 따라 다른 설정 적용 - 더 세밀한 지속시간 조정
   const getSFXSettings = (desc) => {
     const lowerDesc = desc.toLowerCase();
@@ -197,6 +201,7 @@ export const generateSoundEffect = async ({ description, placeholder }) => {
   };
 
   const settings = getSFXSettings(description);
+  console.log(`[elevenlabs][sfx] SFX settings for "${description}":`, settings);
   
   // 효과음 생성을 위한 상세한 프롬프트 생성
   const generateDetailedSFXPrompt = (desc) => {
@@ -243,6 +248,7 @@ export const generateSoundEffect = async ({ description, placeholder }) => {
   };
   
   const detailedPrompt = generateDetailedSFXPrompt(description);
+  console.log(`[elevenlabs][sfx] Generated detailed prompt: "${detailedPrompt}"`);
   
   const makeRequest = async () => {
     const response = await axios.post(
@@ -265,9 +271,13 @@ export const generateSoundEffect = async ({ description, placeholder }) => {
       settings,
       response: { status: response.status, dataLength: response.data.length }
     });
+    
+    const audioBase64 = Buffer.from(response.data, 'binary').toString('base64');
+    console.log(`[elevenlabs][sfx] Successfully generated SFX for "${description}", base64 length: ${audioBase64.length}`);
+    
     return {
       mimeType: 'audio/mpeg',
-      audioBase64: Buffer.from(response.data, 'binary').toString('base64'),
+      audioBase64,
     };
   };
 
@@ -275,16 +285,22 @@ export const generateSoundEffect = async ({ description, placeholder }) => {
     return await queueRequest(() => withRetry(makeRequest));
   } catch (error) {
     if (error.response) {
-      console.error('[elevenlabs][sfx] error', {
+      console.error('[elevenlabs][sfx] API error', {
         status: error.response.status,
         data: error.response.data,
+        description,
       });
       throw new HttpError(error.response.status, 'ElevenLabs SFX API error', error.response.data);
     }
 
-    console.error('[elevenlabs][sfx] network/error', { message: error.message });
+    console.error('[elevenlabs][sfx] network/error', { 
+      message: error.message, 
+      description,
+      error: error 
+    });
     throw new HttpError(500, 'Failed to generate sound effect with ElevenLabs.', {
       message: error.message,
+      description,
     });
   }
 };
