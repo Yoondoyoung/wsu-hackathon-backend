@@ -75,9 +75,19 @@ export const mixSequentialAudio = async (buffers) => {
     return buffers[0];
   }
 
+  // Vercel 서버리스 환경에서는 간단한 버퍼 연결 시도
+  if (process.env.NODE_ENV === 'production' && buffers.length <= 3) {
+    console.log('[audioMixer] Using simple buffer concatenation for Vercel environment');
+    try {
+      return Buffer.concat(buffers);
+    } catch (error) {
+      console.warn('[audioMixer] Simple buffer concatenation failed, falling back to FFmpeg:', error.message);
+    }
+  }
+
   try {
-    // 임시 디렉토리 생성
-    const tempDir = path.join(__dirname, '..', '..', 'temp');
+    // Vercel 서버리스 환경에서는 /tmp 디렉토리 사용
+    const tempDir = process.env.NODE_ENV === 'production' ? '/tmp' : path.join(__dirname, '..', '..', 'temp');
     await fs.mkdir(tempDir, { recursive: true });
 
     // 각 버퍼를 임시 파일로 저장하고 형식 검증
@@ -172,7 +182,9 @@ export const mixSequentialAudio = async (buffers) => {
     // FFmpeg 실패 시 순차적 연결 시도
     console.warn('[audioMixer] FFmpeg concat failed, trying sequential connection...');
     try {
-      return await sequentialAudioConnection(buffers, tempDir);
+      // Vercel 서버리스 환경에서는 /tmp 디렉토리 사용
+      const fallbackTempDir = process.env.NODE_ENV === 'production' ? '/tmp' : path.join(__dirname, '..', '..', 'temp');
+      return await sequentialAudioConnection(buffers, fallbackTempDir);
     } catch (sequentialError) {
       console.error('[audioMixer] Sequential connection also failed:', sequentialError);
       // 최종 fallback: 첫 번째 버퍼만 반환
@@ -295,6 +307,12 @@ export const applySFXFadeEffects = async (sfxBuffer, description = '', fadeInDur
 
   console.log(`[audioMixer] applySFXFadeEffects: Processing SFX "${description}", buffer size: ${sfxBuffer.length} bytes`);
 
+  // Vercel 서버리스 환경에서는 fade 효과를 건너뛰고 원본 반환
+  if (process.env.NODE_ENV === 'production') {
+    console.log('[audioMixer] Skipping SFX fade effects in production environment');
+    return sfxBuffer;
+  }
+
   try {
     // fade 설정 결정
     const fadeSettings = getSFXFadeSettings(description);
@@ -303,7 +321,8 @@ export const applySFXFadeEffects = async (sfxBuffer, description = '', fadeInDur
     
     console.log(`[audioMixer] applySFXFadeEffects: Fade settings - fadeIn: ${finalFadeIn}s, fadeOut: ${finalFadeOut}s`);
 
-    const tempDir = path.join(__dirname, '..', '..', 'temp');
+    // Vercel 서버리스 환경에서는 /tmp 디렉토리 사용
+    const tempDir = process.env.NODE_ENV === 'production' ? '/tmp' : path.join(__dirname, '..', '..', 'temp');
     await fs.mkdir(tempDir, { recursive: true });
 
     const sfxFile = path.join(tempDir, `sfx_raw_${Date.now()}.mp3`);
@@ -371,7 +390,8 @@ export const mixAudioWithSFX = async (audioBuffer, sfxBuffer, sfxVolume = 0.3, a
   }
 
   try {
-    const tempDir = path.join(__dirname, '..', '..', 'temp');
+    // Vercel 서버리스 환경에서는 /tmp 디렉토리 사용
+    const tempDir = process.env.NODE_ENV === 'production' ? '/tmp' : path.join(__dirname, '..', '..', 'temp');
     await fs.mkdir(tempDir, { recursive: true });
 
     const audioFile = path.join(tempDir, `audio_${Date.now()}.mp3`);
