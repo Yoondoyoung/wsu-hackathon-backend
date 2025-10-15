@@ -744,6 +744,39 @@ export const listNarratorVoices = asyncHandler(async (req, res) => {
   });
 });
 
+// 스토리 생성 취소 API
+export const cancelStoryGeneration = asyncHandler(async (req, res) => {
+  const { storyId } = req.params;
+  
+  if (!storyId) {
+    throw new HttpError(400, 'Story ID is required');
+  }
+
+  console.log(`[cancel-story] Cancelling story generation for ID: ${storyId}`);
+
+  try {
+    // 스토리 상태를 cancelled로 업데이트
+    await updateStoryStatus(storyId, 'cancelled', 'Story generation cancelled by user');
+    
+    // 스토리 상태에서 제거 (있다면)
+    const storyState = getStoryState(storyId);
+    if (storyState) {
+      console.log(`[cancel-story] Removing story state for ID: ${storyId}`);
+      // 스토리 상태 정리 로직이 있다면 여기에 추가
+    }
+
+    console.log(`[cancel-story] Successfully cancelled story generation for ID: ${storyId}`);
+    res.status(200).json({ 
+      message: 'Story generation cancelled successfully',
+      storyId,
+      status: 'cancelled'
+    });
+  } catch (error) {
+    console.error(`[cancel-story] Failed to cancel story ${storyId}:`, error);
+    throw new HttpError(500, 'Failed to cancel story generation', { error: error.message });
+  }
+});
+
 // Get stories by session
 export const getStoriesBySessionId = asyncHandler(async (req, res) => {
   const { sessionId } = req.params;

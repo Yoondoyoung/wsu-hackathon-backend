@@ -17,6 +17,7 @@ import {
   getSessionStatistics,
   getStoryGenerationLogs,
   createNewSession,
+  cancelStoryGeneration,
 } from '../controllers/storyController.js';
 import {
   ENABLE_AUDIO,
@@ -52,6 +53,7 @@ router.post('/narrate-pages', ENABLE_AUDIO && ENABLE_ELEVEN_ENDPOINTS ? narrateP
 router.get('/:storyId/status', getStoryStatus);
 router.get('/:storyId/logs', getStoryGenerationLogs);
 router.get('/:storyId/page/:pageNumber', getStoryPage);
+router.delete('/:storyId/cancel', cancelStoryGeneration);
 router.get('/:storyId', getStoryById);
 
 export default router;
